@@ -1,0 +1,16 @@
+  if(mb_strlen($login) < 3 || mb_strlen($login) > 30 || mb_strlen($login) == 0){
+        echo"Not aviable LOGIN lenght";
+        exit();
+    } else
+        if(mb_strlen($pass) < 4 || mb_strlen($pass) > 20 || mb_strlen($pass)==0){
+            echo"Not aviable PASSWORD lenght";
+            exit();
+        } else
+            if(mb_strlen($name) == 0){
+                echo"Not aviable NAME lenght";
+                exit();
+            } else
+                if(mb_strlen($email) == 0){
+                    echo"Not aviable E-MAIL lenght";
+                    exit();
+                } 
